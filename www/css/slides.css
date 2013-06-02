@@ -1,0 +1,9 @@
+.rightImage { 
+    border: 0;
+	float: right;
+	width: 350px;
+	-webkit-box-shadow: none;
+	box-shadow: none !important;
+	background:none;
+	margin: 0;
+}
