@@ -533,6 +533,7 @@
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Simon MacDonald (858H33K8S8)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -546,6 +547,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = Cordova;
+				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = include/Cordova;
 				SKIP_INSTALL = YES;
 			};
@@ -562,6 +564,7 @@
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Simon MacDonald (858H33K8S8)";
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -572,6 +575,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = Cordova;
+				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = include/Cordova;
 				SKIP_INSTALL = YES;
 			};

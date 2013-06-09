@@ -22,7 +22,19 @@
 
 		<!-- extra css I used in the slides -->
 		<link rel="stylesheet" href="css/slides.css">
-
+        <style type="text/css">
+            #wrapper {
+                width: 100%;
+                overflow: auto;
+            }
+            #first {
+                float: left;
+                width: 50%;
+            }
+            #second {
+            }            
+        </style>
+            
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
@@ -84,72 +96,57 @@
 
 				<section>
 					<h3>Native Mobile Apps</h3>
-					<table>
-						<tr>
-							<th>Pros</th>
-							<th>Cons</th>
-						</tr>
-						<tr>
-							<td>Feature Rich</td>
-							<td>Platform Specific</td>
-						</tr>
-						<tr>
-							<td>Charge Money</td>
-							<td>Low level of reuse</td>
-						</tr>
-						<tr>
-							<td>Offline mode</td>
-							<td>&nbsp;</td>
-						</tr>
-					</table>
+                    <p>&nbsp;</p>
+                    <div id="wrapper">
+                        <div id="first">
+                            Pros<br/>
+                            Feature Rich<br/>
+                            Charge Money<br/>
+                            Offline mode<br/>
+                        </div>
+                        <div id="second">
+                            Cons<br/>
+                            Platform Specific<br/>
+                            Low level of skill reuse<br/>
+                        </div>
+                    </div>
  				</section>
 
 				<section>
 					<h3>Web Apps</h3>
-					<table>
-						<tr>
-							<th>Pros</th>
-							<th>Cons</th>
-						</tr>
-						<tr>
-							<td>Runs everywhere</td>
-							<td>Lacks functionality</td>
-						</tr>
-						<tr>
-							<td>High level of reuse</td>
-							<td>No offline support</td>
-						</tr>
-						<tr>
-							<td>&nbsp;</td>
-							<td>Browser only</td>
-						</tr>
-					</table>
+                    <p>&nbsp;</p>
+                    <div id="wrapper">
+                        <div id="first">
+                            Pros<br/>
+                            Runs everywhere<br/>
+                            High level of skill reuse<br/>
+                            &nbsp;<br/>
+                        </div>
+                        <div id="second">
+                            Cons<br/>
+                            Lacks functionality<br/>
+                            No offline support<br/>
+                            Browser only
+                        </div>
+                    </div>
  				</section>
 
 				<section>
 					<h3>Hybrid Mobile Apps</h3>
-					<table>
-						<tr>
-							<th>Pros</th>
-							<th>Cons</th>
-						</tr>
-						<tr>
-							<td>Feature Rich</td>
-							<td>Runs almost everywhere</td>
-						</tr>
-						<tr>
-							<td>Charge Money</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr>
-							<td>Offline mode</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr>
-							<td>High level of skill resuse</td>
-							<td>&nbsp;</td>
-						</tr>
-					</table>
+                    <p>&nbsp;</p>
+                    <div id="wrapper">
+                        <div id="first">
+                            Pros<br/>
+                            Feature Rich<br/>
+                            Charge Money<br/>
+                            Offline mode<br/>
+                            High level of skill reuse<br/>
+                        </div>
+                        <div id="second">
+                            Cons<br/>
+                            Runs almost everywhere<br/>
+                        </div>
+                    </div>
  				</section>
  				
 				<section>
@@ -183,11 +180,12 @@
 
 				<section>
 					<h3>PhoneGap Features</h3>
-					<table>
+                    <p>&nbsp;</p>
+					<table width="100%">
 						<tr>
-							<td>Accelerometer</td>
-							<td>Camera</td>
-							<td>Capture</td>
+							<td width="34%">Accelerometer</td>
+							<td width="33%">Camera</td>
+							<td width="33%">Capture</td>
 						</tr>
 						<tr>
 							<td>Compass</td>
@@ -410,7 +408,7 @@
 					<pre><code data-trim contenteditable>
 
 navigator.camera.getPicture(onSuccess, onFail, { quality: 50, 
-	sourceType: Camera.PictureSourceType.CAMERA,
+         sourceType: Camera.PictureSourceType.CAMERA,
     destinationType: Camera.DestinationType.FILE_URI }); 
 
 function onSuccess(imageURI) {
@@ -425,7 +423,7 @@ function onFail(message) {
 				</section>
 
 				<section>
-					<img src="" id="myImage" style="display: none"/>
+					<img src="" id="myImage" style="display: none" width="1000" height="600"/>
 				</section>
 
 				<section>
@@ -554,7 +552,7 @@ function onFail(message) {
 			                console.log("Error getting picture: " + e);
 			            },
 			            { quality: 50, destinationType:
-			            Camera.DestinationType.FILE_URI, sourceType: Camera.PictureSourceType.PHOTOLIBRARY});
+			            Camera.DestinationType.FILE_URI, sourceType: Camera.PictureSourceType.CAMERA});
                 }
             } );
    		</script>
